@@ -20,8 +20,16 @@ class ObjNav(object):
         
         #initialize locations of navigation elements
         self._locNav = LocNav()
+        self._locNav.set_loc_link_menu(prop['loc_link_menu_mobile'])
         self._locNav.set_loc_link_products_services(prop['loc_link_productsServices'])
         self._locNav.set_loc_link_mediaportal(prop['loc_link_mediaPortal'])
+        
+    def get_link_menu(self, driver):
+        
+        element_location_locator = self._basic_operations.element(self._locNav.get_loc_link_menu())
+        link_menu = self._location_manager.element_locator(element_location_locator[1], element_location_locator[0], driver)
+        
+        return link_menu
         
     def get_link_products_services(self, driver):   
         # return "element location + locator"

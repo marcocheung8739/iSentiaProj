@@ -7,6 +7,10 @@ class Nav(object):
     
     def __init__(self):
         self._objNav = ObjNav()
+        
+    def click_menu_link(self, driver):
+        link_menu = self._objNav.get_link_menu(driver)
+        link_menu.click()
     
     def click_products_services_link(self, driver):
         
