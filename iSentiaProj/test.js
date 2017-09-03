@@ -9,8 +9,8 @@ var options = {
 		and the sequence is args: [APPLICATION, OS, OS_VERSION, BROWSER, BROWSER_VERSION, HOST("http://www.isentia.com" if empty)] 
 	*/
 		
-	//args: ['Web', 'Windows', '8', 'Chrome', '', '']	// Chrome latest, windows 8
-	args: ['Web', 'Windows', '8', 'IE', '10', ''] // IE 10, Windows 8
+	args: ['Web', 'Windows', '8', 'Chrome', '', '']	// Chrome latest, windows 8
+	//args: ['Web', 'Windows', '8', 'IE', '10', ''] // IE 10, Windows 8
 	//args: ['Web', 'OS X', 'Sierra', 'Safari', '', ''] // Safari latest, Mac OS latest
 	
 	/* 
@@ -20,7 +20,6 @@ var options = {
 	*/
 
 	//args: ['Mobile', 'Android', 'Samsung Galaxy S6', 'true', '1.4.16', ''] // Android 
-	//args: ['Mobile', 'IOS', 'iPhone 7', 'true', '1.6.3', '']
 
 	
 };

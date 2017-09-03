@@ -45,7 +45,7 @@ class TCMediaPortal(unittest.TestCase):
             
             #verify the number of modules displayed
             print 'number of modules in media portal page is ' + str(num_of_modules)
-            #self.assertTrue(num_of_modules == 3, "the number of modules is not matching the expected result")
+            self.assertTrue(num_of_modules == 3, "the number of modules is not matching the expected result")
 
         except Exception:
             time_str = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
